@@ -1,15 +1,5 @@
 # Task 1 — Employee Attrition Prediction System
 
-A single-page, dark-themed showcase/dashboard for the project brief:
-predicting whether an employee is likely to leave, based on job
-satisfaction, salary, tenure, and demographics.
-
-## How to open
-1. Unzip the folder.
-2. Double-click `index.html` — it opens in any browser, no server or
-   install needed (fonts and charts load from a CDN, so keep your
-   internet on for the first load).
-
 ## What's inside
 - **Hero** — headline with a mouse-reactive 3D card stack showing
   three sample employee risk scores (move your cursor over it).
