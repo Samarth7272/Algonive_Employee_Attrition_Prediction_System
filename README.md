@@ -43,20 +43,29 @@ http://127.0.0.1:5000
 - Cloud Deployment
 - Real-time Database
 - Deep Learning Model
+  
+## 📂 Project Structure
 
+```
+📦 Employee Attrition Prediction System
+ ┣ 📂 templates
+ ┃ ┗ 📄 index.html
+ ┣ 📂 static
+ ┃ ┣ 📂 css
+ ┃ ┣ 📂 js
+ ┃ ┗ 📂 images
+ ┣ 📂 dataset
+ ┃ ┗ 📄 HR_Employee_Attrition.csv
+ ┣ 📄 app.py
+ ┣ 📄 model.py
+ ┣ 📄 requirements.txt
+ ┗ 📄 README.md
+```
 ## Developer
 
 Samarth
 
 Dataset → Data Cleaning → Feature Engineering → Model Training → Prediction → Dashboard
 
-attrition-project/
-│── app.py
-│── model.py
-│── employee_attrition_model.pkl
-│── templates/
-│── static/
-│── dataset/
-│── README.md
 
 ## Project Structure
