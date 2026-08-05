@@ -24,14 +24,7 @@ This project predicts whether an employee is likely to stay or leave using Machi
 - Joblib
 
 ## Machine Learning Workflow
-attrition-project/
-│── app.py
-│── model.py
-│── employee_attrition_model.pkl
-│── templates/
-│── static/
-│── dataset/
-│── README.md
+
 
 ## How to Run
 
@@ -50,7 +43,14 @@ http://127.0.0.1:5000
 - Cloud Deployment
 - Real-time Database
 - Deep Learning Model
-
+attrition-project/
+│── app.py
+│── model.py
+│── employee_attrition_model.pkl
+│── templates/
+│── static/
+│── dataset/
+│── README.md
 ## Developer
 
 Samarth
