@@ -1,22 +1,60 @@
-# Task 1 — Employee Attrition Prediction System
+# Employee Attrition Prediction System
 
-## What's inside
-- **Hero** — headline with a mouse-reactive 3D card stack showing
-  three sample employee risk scores (move your cursor over it).
-- **Pipeline** — the four real build stages in order: dataset →
-  feature engineering → classification model → visualization.
-- **Dashboard** — mock charts (department risk breakdown, model
-  accuracy comparison) and a "highest risk" watchlist. Wire the
-  `deptChart` / `modelChart` datasets in the `<script>` at the bottom
-  of `index.html` to your actual model output when it's ready.
-- **Datasets** — direct links to Kaggle, UCI ML Repository, and
-  Google Dataset Search, pre-filtered for "HR Analytics" / "Employee
-  Attrition".
-- **Stack** — the Python/ML tools this task expects you to use.
+## Overview
+This project predicts whether an employee is likely to stay or leave using Machine Learning.
 
-## Making it real
-Right now the charts use sample numbers. Once you've trained your
-classifier in Python, export the predictions to JSON and swap them
-into the `data:` arrays in the two `new Chart(...)` calls, or fetch
-them from a small backend — the front end doesn't care where the
-numbers come from.
+## Features
+- Employee Attrition Prediction
+- Interactive Dashboard
+- Charts and Visualizations
+- Flask Backend
+- Responsive UI
+- Machine Learning Model
+
+## Technologies Used
+- Python
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+
+## Machine Learning Workflow
+attrition-project/
+│── app.py
+│── model.py
+│── employee_attrition_model.pkl
+│── templates/
+│── static/
+│── dataset/
+│── README.md
+
+## How to Run
+
+1. Clone the repository
+2. Install requirements
+3. Run:
+
+python app.py
+
+4. Open:
+http://127.0.0.1:5000
+
+## Future Improvements
+- User Login
+- Admin Dashboard
+- Cloud Deployment
+- Real-time Database
+- Deep Learning Model
+
+## Developer
+
+Samarth
+
+Dataset → Data Cleaning → Feature Engineering → Model Training → Prediction → Dashboard
+
+## Project Structure
