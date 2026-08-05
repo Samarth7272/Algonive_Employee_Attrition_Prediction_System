@@ -43,6 +43,13 @@ http://127.0.0.1:5000
 - Cloud Deployment
 - Real-time Database
 - Deep Learning Model
+
+## Developer
+
+Samarth
+
+Dataset → Data Cleaning → Feature Engineering → Model Training → Prediction → Dashboard
+
 attrition-project/
 │── app.py
 │── model.py
@@ -51,10 +58,5 @@ attrition-project/
 │── static/
 │── dataset/
 │── README.md
-## Developer
-
-Samarth
-
-Dataset → Data Cleaning → Feature Engineering → Model Training → Prediction → Dashboard
 
 ## Project Structure
