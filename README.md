@@ -1,222 +1,230 @@
-📊 Employee Attrition Prediction System | Machine Learning & HR Analytics
+<div align="center">
 
-An intelligent Machine Learning-based web application that predicts employee attrition risk by analyzing important factors such as job satisfaction, salary, work environment, experience, and employee demographics.
+# 📊 Employee Attrition Prediction System
 
-Developer: Samarth Shukla
+### Machine Learning for HR Analytics: predict who is likely to leave, before they do
 
-Project Domain: Machine Learning | Data Science | Python | HR Analytics
+*A full-stack machine learning web application that predicts employee attrition risk and presents insights through an interactive dashboard.*
 
-Application Type: Full Stack Machine Learning Web Application
+
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+
+
+
+
+![Flask](https://img.shields.io/badge/Flask-Backend-000000?logo=flask&logoColor=white)
+
+
+
+
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+
+
+
+
+![Pandas](https://img.shields.io/badge/Pandas-Data-150458?logo=pandas&logoColor=white)
+
+
+
+
+![Chart.js](https://img.shields.io/badge/Chart.js-Visualisation-FF6384?logo=chartdotjs&logoColor=white)
+
+
+
+[📧 Hire Me](mailto:samarthworldwide@gmail.com) · [💼 LinkedIn](https://www.linkedin.com/in/samarth-shukla-b72003293) · [🐙 GitHub](https://github.com/Samarth7272)
+
+</div>
 
 ---
 
-🚀 Project Overview
+## 🎯 The Problem
 
-Employee Attrition Prediction System is a machine learning project designed to help organizations understand employee turnover patterns and identify employees who may be at risk of leaving an organization.
+Employee turnover is expensive. Losing experienced people raises recruitment costs, hurts productivity and adds workload to the rest of the team. Most HR teams still find out *after* someone resigns.
 
-The application uses employee-related data to generate attrition predictions and presents analytical insights through an interactive dashboard.
+**This project flips that.** It uses employee data such as job satisfaction, salary, work environment, experience and demographics to predict whether an employee is likely to leave. HR teams can then act early.
 
-It combines Machine Learning, Python, Flask, data processing, and data visualization to demonstrate how predictive analytics can support better HR planning and decision-making.
+---
 
-🎯 Problem Statement
+## ✨ Key Features
 
-Employee turnover is a major challenge for organizations.
+| Feature | Description |
+|---|---|
+| 🔮 **Attrition prediction** | Predicts whether an employee is likely to leave or stay |
+| 🧠 **Trained ML model** | Model trained in `model.py`, saved as `employee_attrition_model.pkl` and loaded by the web app |
+| 🌐 **Flask backend** | Handles requests and connects the model to the web interface |
+| 📊 **Interactive dashboard** | Shows attrition insights and visual analytics with Chart.js |
+| 🧹 **Data processing** | Cleans and prepares employee data for modelling |
+| 📱 **Responsive UI** | Clean, user-friendly interface built with HTML5, CSS3 and JavaScript |
 
-Losing experienced employees can increase recruitment costs, affect productivity, and create additional workload for existing teams.
+---
 
-Traditional approaches often depend on manual analysis.
+## 🛠️ Tech Stack
 
-This project explores how Machine Learning can help identify potential employee attrition patterns and provide useful insights for HR analytics.
+| Technology | Purpose |
+|---|---|
+| **Python** | Core application development |
+| **Flask** | Backend and web application |
+| **Scikit-learn** | Machine learning model |
+| **Pandas** | Data processing |
+| **NumPy** | Numerical operations |
+| **Joblib** | Model serialisation |
+| **HTML5 / CSS3** | Frontend structure and styling |
+| **JavaScript** | Frontend interactions |
+| **Chart.js** | Data visualisation |
 
-✨ Key Features
+---
 
-- Employee Attrition Prediction: Predict whether an employee is likely to leave or stay.
-- Interactive Dashboard: Display employee attrition insights.
-- Data Visualization: Present analytical results through charts.
-- Machine Learning Integration: Use a trained prediction model.
-- Flask Backend: Handle application requests and model integration.
-- Responsive Interface: Provide a user-friendly web experience.
-- Data Processing: Analyze employee-related information.
-- Prediction Results: Present model-generated outputs.
+## 🧠 Machine Learning Workflow
 
-🛠️ Technology Stack
+1. Load the employee dataset
+2. Preprocess and prepare the data
+3. Select features and prepare model inputs
+4. Train the machine learning model
+5. Save the trained model (`.pkl`)
+6. Load the model into the Flask application
+7. Generate attrition predictions
+8. Display results and visual insights on the dashboard
 
-Technology| Purpose
-Python| Core application development
-Flask| Backend and web application
-Scikit-learn| Machine Learning
-Pandas| Data processing
-NumPy| Numerical operations
-Joblib| Model serialization
-HTML5| Frontend structure
-CSS3| User interface styling
-JavaScript| Frontend interactions
-Chart.js| Data visualization
+---
 
-🧠 Machine Learning Workflow
+## 🏗️ System Architecture
 
-The project follows a machine learning workflow:
+```
+   EMPLOYEE DATASET
+          │
+          ▼
+   DATA PREPROCESSING
+          │
+          ▼
+    ML MODEL TRAINING
+          │
+          ▼
+  TRAINED MODEL (.pkl)
+          │
+          ▼
+     FLASK BACKEND
+          │
+          ▼
+    WEB APPLICATION
+          │
+          ▼
+  PREDICTION DASHBOARD
+          │
+          ▼
+      HR ANALYTICS
+```
 
-1. Employee dataset collection and loading.
-2. Data preprocessing and preparation.
-3. Feature selection and model input preparation.
-4. Machine learning model training.
-5. Saving the trained model.
-6. Loading the model into the Flask application.
-7. Generating employee attrition predictions.
-8. Displaying results and visual insights.
+---
 
-🏗️ System Architecture
+## 📁 Project Structure
 
-       EMPLOYEE DATASET
-              |
-              v
-       DATA PREPROCESSING
-              |
-              v
-       ML MODEL TRAINING
-              |
-              v
-     TRAINED MODEL (.pkl)
-              |
-              v
-       FLASK BACKEND
-              |
-              v
-       WEB APPLICATION
-              |
-              v
-     PREDICTION DASHBOARD
-              |
-              v
-       HR ANALYTICS
-
-📂 Project Structure
-
+```
 Algonive_Employee_Attrition_Prediction_System/
-│
-├── dataset/
-│
-├── static/
-│
-├── templates/
-│
-├── screenshots/
-│
-├── app.py
-│
-├── model.py
-│
-├── employee_attrition_model.pkl
-│
+├── dataset/                       Employee data
+├── static/                        CSS, JavaScript, assets
+├── templates/                     HTML pages
+├── app.py                         Flask application
+├── model.py                       Model training script
+├── employee_attrition_model.pkl   Trained model
 └── README.md
+```
 
-⚙️ Installation and Setup
+---
 
-Step 1: Clone the repository
+## 🚀 Getting Started
 
+```bash
+# 1. Clone the repository
 git clone https://github.com/Samarth7272/Algonive_Employee_Attrition_Prediction_System.git
-
-Step 2: Navigate to the project
-
 cd Algonive_Employee_Attrition_Prediction_System
 
-Step 3: Create a virtual environment
-
+# 2. Create and activate a virtual environment
 python -m venv venv
+venv\Scripts\activate          # Windows
+source venv/bin/activate       # Linux / macOS
 
-Step 4: Activate the environment
+# 3. Install dependencies
+pip install flask scikit-learn pandas numpy joblib
 
-Windows:
+# 4. (Optional) Retrain the model
+python model.py
 
-venv\Scripts\activate
-
-Linux / macOS:
-
-source venv/bin/activate
-
-Step 5: Install dependencies
-
-If you add a "requirements.txt" containing the project's actual dependencies:
-
-pip install -r requirements.txt
-
-Step 6: Run the application
-
+# 5. Run the application
 python app.py
+```
 
-Step 7: Open in browser
-
-http://127.0.0.1:5000
-
-📸 Application Screenshots
-
-The "screenshots/" directory contains project screenshots.
-
-Add images showing:
-
-- Application homepage.
-- Employee input interface.
-- Prediction results.
-- Dashboard and visualizations.
-
-📈 Business Applications
-
-This project demonstrates potential applications in:
-
-- HR analytics.
-- Employee retention planning.
-- Workforce management.
-- Organizational data analysis.
-- Predictive business intelligence.
-
-Important: Predictions are intended to support analysis and should not be used as the sole basis for employment decisions.
-
-💡 Technical Skills Demonstrated
-
-Through this project, I developed practical experience in:
-
-- Python application development.
-- Machine Learning model integration.
-- Data preprocessing and analysis.
-- Flask backend development.
-- Model serialization and loading.
-- Data visualization.
-- Frontend and backend integration.
-- Application debugging and testing.
-- Git and GitHub version control.
-
-🔮 Future Enhancements
-
-- Advanced machine learning algorithms.
-- Model performance comparison.
-- Improved prediction accuracy.
-- Explainable AI for understanding predictions.
-- Advanced HR analytics dashboard.
-- Secure user authentication.
-- Cloud deployment.
-- Automated model monitoring.
-
-👨‍💻 About the Developer
-
-Samarth Shukla
-
-Final-Year B.Tech Computer Science and Engineering Student.
-
-Interested in Python Development, Machine Learning, Artificial Intelligence, Backend Engineering, and Full Stack Development.
-
-GitHub: https://github.com/Samarth7272
-
-Areas of Interest:
-
-- Python Development
-- Machine Learning
-- Backend Development
-- Data Science
-- Artificial Intelligence
+Then open **http://127.0.0.1:5000** in your browser.
 
 ---
 
-⭐ If you find this project interesting, consider giving this repository a star.
+## 📈 Business Applications
 
-My goal is to build practical technology solutions that solve real-world problems through programming, data analysis, and machine learning.
+- **HR analytics:** understand why employees leave
+- **Retention planning:** spot at-risk employees early
+- **Workforce management:** plan hiring and succession
+- **Organisational data analysis:** find patterns across teams
+- **Predictive business intelligence:** turn data into decisions
+
+> ⚠️ **Important:** Predictions are intended to support analysis and should not be used as the sole basis for employment decisions.
+
+---
+
+## 🎓 What This Project Demonstrates
+
+- Building an **end-to-end ML pipeline**: data → model → deployment
+- **Model serialisation** and loading inside a web application
+- **Flask backend** development with frontend integration
+- **Data visualisation** for non-technical stakeholders
+- Clean project structure, debugging, testing and **Git/GitHub** workflow
+
+---
+
+## 🔮 Future Enhancements
+
+- Compare multiple algorithms (Random Forest, XGBoost, Logistic Regression) and report accuracy, precision and recall
+- Add Explainable AI (SHAP) to show *why* an employee is flagged
+- Advanced HR analytics dashboard
+- Secure user authentication
+- Cloud deployment (Render / Railway / AWS)
+- Automated model monitoring
+
+---
+
+## 👨‍💻 About the Author
+
+**Samarth Shukla**: Final-year B.Tech Computer Science student and Software Engineer Intern at LV8 Tech, working on REST API design, OAuth 2.0 and backend architecture for fintech integrations (Next.js, TypeScript, PostgreSQL).
+
+**Skills:** Python · JavaScript/TypeScript · FastAPI · Flask · React/Next.js · SQL · PyTorch · scikit-learn · Docker · AWS · Git
+
+### 💼 Open to Opportunities
+
+I'm actively looking for **Software Engineer, Backend, Full-Stack and AI/ML** roles (full-time and internships). If this project impressed you, I'd love to talk.
+
+[
+
+![Email](https://img.shields.io/badge/Email-samarthworldwide%40gmail.com-D14836?logo=gmail&logoColor=white)
+
+](mailto:samarthworldwide@gmail.com)
+[
+
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Samarth%20Shukla-0A66C2?logo=linkedin&logoColor=white)
+
+](https://www.linkedin.com/in/samarth-shukla-b72003293)
+[
+
+![GitHub](https://img.shields.io/badge/GitHub-Samarth7272-181717?logo=github&logoColor=white)
+
+](https://github.com/Samarth7272)
+
+📧 **Contact:** samarthworldwide@gmail.com
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, please give it a star!
+
+*Built as part of the Algonive Data Science Internship.*
+
+</div>
